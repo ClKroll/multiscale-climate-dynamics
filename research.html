@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Clarissa A. Kroll</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Consistent full-width and media-left layouts using .project-feature-card box styling */
+    .research-topics {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .project-feature-card.research-card-full {
+      display: block !important;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .project-feature-card.research-card-media-left {
+      display: grid !important;
+      grid-template-columns: 260px 1fr;
+      gap: 1.75rem;
+      align-items: start;
+      box-sizing: border-box;
+    }
+
+    .research-card-full h2,
+    .research-card-media-left h2 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .project-media-left {
+      margin: 0;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 0.75rem;
+    }
+
+    .project-media-left img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 3px;
+    }
+
+    .research-card-full .figure-card,
+    .research-card-full .subsection-media {
+      width: 100%;
+      max-width: 100%;
+      margin: 1.25rem 0 0.5rem 0;
+      padding: 0.85rem;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .research-card-full .figure-card img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .research-card-full .video-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    .research-card-full .video-container iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .figure-caption,
+    .media-caption {
+      display: block;
+      margin-top: 0.65rem;
+      font-size: 0.8rem;
+      line-height: 1.45;
+      color: #475569;
+    }
+
+    @media (max-width: 768px) {
+      .project-feature-card.research-card-media-left {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .project-media-left {
+        max-width: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Standardized Header Banner -->
+  <header class="header-banner">
+    <div class="header-overlay"></div>
+    <img src="header.jpg" alt="Atmospheric Background" class="header-bg" />
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-brand">Clarissa A. Kroll</a>
+        <div class="nav-links">
+          <a href="index.html">Overview</a>
+          <a href="research.html" class="active">Research</a>
+          <a href="advisees.html">Opportunities &amp; Advisees</a>
+          <a href="publications.html">Publications</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="header-content">
+      <h1>Research</h1>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+
+    <!-- Flagship Grant Overview Card -->
+    <section class="project-feature-card">
+      <div class="project-logo-box">
+        <img src="simbaFasca.png" alt="SIMBA FASCA Project Logo" class="project-logo-img" />
+      </div>
+      <div class="project-details">
+        <div class="project-header-meta">
+          <span class="badge-tag">Upcoming Group Project</span>
+          <span class="meta-dot">&bull;</span>
+          <span class="meta-field">Multiscale Climate Dynamics &amp; Model Development</span>
+        </div>
+        <h2>SIMBA FASCA &ndash; The Lion in the Layers</h2>
+        <p>
+          Investigating how small-scale moisture transport in the atmospheric boundary layer imprints on convection, larger-scale circulation, and climate at the University of Bonn.
+        </p>
+      </div>
+    </section>
+
+    <!-- Research Theme Cards -->
+    <section id="research" class="research-topics">
+
+      <!-- Card 1: Full-Width Box -->
+      <article class="project-feature-card research-card-full">
+        <h2>Tackling Persistent Rainfall Biases in Climate Models</h2>
+        <p>
+          One of the most persistent challenges in climate modeling is the double-ITCZ bias—where models simulate excessive rainfall south of the equator and insufficient precipitation along the equator itself. This systematic distortion degrades global projections of tropical climate patterns, including monsoons and El Niño dynamics.
+        </p>
+        <p>
+          In our research
+          <a href="https://acp.copernicus.org/articles/25/16915/2025/" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2025)</a>,
+          I leverage ICON XPP - a flexible configuration of the ICON model supporting tunable parameterizations—to examine how this bias scales from coarse, parameterization-dependent grids to convection-permitting resolutions.
+        </p>
+        <p>
+          We demonstrate that the double-ITCZ bias persists even at kilometer-scale resolutions, pointing to fundamental deficiencies in moisture transport and surface–atmosphere interactions. Systematically tracing physical process dynamics across spatial resolutions reveals that resolving tropical rainfall requires more than finer grids or simply omitting parameterization schemes—it demands a refined physical representation of the mechanisms governing Earth's hydrological cycle.
+        </p>
+
+        <figure class="figure-card">
+          <img src="itcz_mechanism.jpeg" alt="Observed vs Modelled Boundary Layer Moisture Transport and Residence Time Bias" class="feature-img" />
+          <figcaption class="figure-caption">
+            <strong>Fig. 1:</strong> <em>Top row:</em> Conceptual depiction of the main zonal and meridional circulations exchanging moisture and energy between the subtropics and tropics as observed (left) and simulated (right). Excessive vertical moisture loss from the boundary layer to the free troposphere in simulations reduces Warm Pool (WP) moisture import, weakening the Walker circulation and generating spurious convective centers in the Eastern Pacific. <em>Bottom row:</em> Inverse residence time within the boundary layer as observed and simulated bias against observations (gray lines mark 20&deg; and 40&deg; latitudes). <em>(Adapted from Kroll et al., 2025)</em>
+          </figcaption>
+        </figure>
+
+        <div class="feature-actions">
+          <a href="https://acp.copernicus.org/articles/25/16915/2025/" target="_blank" rel="noopener" class="doi-btn">Read Publication &rarr;</a>
+          <a href="https://blogs.egu.eu/divisions/cl/2026/01/12/itcz/" target="_blank" rel="noopener" class="blog-btn">Read EGU Blog Post &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Card 2: Left-Image Box -->
+      <article class="project-feature-card research-card-media-left">
+        <figure class="project-media-left">
+          <img src="waterVapour.png" alt="Relative humidity vs temperature profile" />
+          <figcaption class="figure-caption">
+            <strong>Fig. 2:</strong> Saturation specific humidity at the equivalent frost-point temperature (<em>T</em><sub>frost</sub>, solid line) vs. mean specific humidity at the cold-point tropopause (dashed line). Additional frozen moisture is captured via a constant temperature offset to <em>T</em><sub>frost</sub>. <em>(Adapted from Kroll and Schmidt, 2025)</em>
+          </figcaption>
+        </figure>
+
+        <div class="project-details">
+          <h2>Exploring the Impact of Stratospheric Heating on Atmospheric Moisture and Deep Convection</h2>
+          <p>
+            Volcanic eruptions and geoengineering methods like stratospheric aerosol injection cause heating perturbations near the tropopause and lower stratosphere, which have complex effects on atmospheric moisture transport. While large-scale simulations capture water vapor transport controlled by tropical cold-point temperatures, they do not fully represent frozen moisture carried by intense, kilometer-scale deep convection.
+          </p>
+          <p>
+            To address this, I use a hybrid approach combining coarse-scale large-ensemble simulations of volcanic eruptions of varying magnitudes
+            <a href="https://acp.copernicus.org/articles/21/6565/2021/acp-21-6565-2021.html" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2021)</a>
+            with high-resolution km-scale simulations focusing on a single eruption magnitude to study frozen moisture transport by overshooting convection
+            (<a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022GL102262" target="_blank" rel="noopener" class="paper-link">Kroll et al., 2023</a>;
+            <a href="https://iopscience.iop.org/article/10.1088/1748-9326/ad33d0/meta" target="_blank" rel="noopener" class="paper-link">Kroll et al., 2024</a>).
+          </p>
+          <p>
+            By synthesizing these findings into a thermodynamically based framework, I enable rapid estimation of changes in stratospheric moisture. This work advances parameterizations of overshooting convection, helps assess the impact of future eruptions, and places recent events like the 2022 Hunga eruption into context
+            <a href="https://www.nature.com/articles/s43247-024-01651-w" target="_blank" rel="noopener" class="paper-link">(Kroll and Schmidt, 2025)</a>.
+          </p>
+        </div>
+      </article>
+
+      <!-- Card 3: Full-Width Box -->
+<!-- Card 3: Full-Width Box with Embedded Split Image -->
+      <article class="project-feature-card research-card-full">
+        <h2>Kilometer-Scale ICON Modeling</h2>
+        <p>
+          I employ a resolution hierarchy of the ICON model—the German and Swiss weather and climate model—to study atmospheric processes across scales. Beyond running simulations, I focus on improving how the model represents key physical processes. Building on my storm-resolving work with ICON-Sapphire <a href="https://doi.org/10.5194/gmd-16-779-2023" target="_blank" rel="noopener" class="paper-link">(Hohenegger et al., incl. Kroll, 2023)</a>, I now contribute to the coarse-scale ICON XPP configuration for upcoming CMIP7 climate simulations <a href="https://gmd.copernicus.org/articles/18/9385/2025/" target="_blank" rel="noopener" class="paper-link">(Müller et al., incl. Kroll, 2025)</a>, and independently develop an uncoupled, storm-resolving setup of ICON XPP <a href="https://acp.copernicus.org/articles/25/16915/2025/" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2025)</a> on GPUs using OpenACC directives within the Blue Line EXCLAIM framework <a href="https://gmd.copernicus.org/articles/19/713/2026/" target="_blank" rel="noopener" class="paper-link">(Dipankar et al., incl. Kroll, 2026)</a>.
+        </p>
+
+        <!-- Side-by-Side Row: Latest Work Text + Figure -->
+        <div class="card-split-row">
+
+         <figure class="figure-card">
+          <img src="damping.jpeg" alt="Spatial wave spectra and scale-dependent damping in ICON" />
+          <figcaption class="figure-caption">
+            <strong>Fig. 3:</strong> Vertical velocity fields exhibiting unphysical backreflections from the model top and velocity fields with different damping amplitudes.
+        </figure> 
+
+        <div class="split-text">
+          <p>
+            <br><br><br>
+            My latest work <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005583" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2026)</a> analyzes how transitioning to explicit kilometer-scale physics alters spatial wave spectra and velocity variance across scales from 10&nbsp;km to 10,000&nbsp;km. To prevent numerical artifacts from corrupting physical signals, I reformulate ICON’s upper-boundary absorber into a scale-dependent damping scheme, resolving a critical numerical bottleneck in high-resolution climate modeling.
+          </p>
+        </div>
+      </div>
+
+
+      
+        <p>
+          My research leverages major European HPC platforms—including Levante, Mistral, Daint, and Alps—to run large-scale experiments efficiently, highlighted in the BBC feature below on our simulations conducted on the Alps supercomputer.
+        </p>
+
+        <div class="subsection-media">
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/jGVRAK8KIBg"
+              title="ICON Climate Simulation"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <span class="media-caption">
+            <strong>Fig. 4:</strong> BBC feature on the ALPS Supercomputer in Lugano, Switzerland, highlighting kilometer-scale ICON XPP simulations as one of the applications on the cluster.
+          </span>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Clarissa A. Kroll</p>
+  </footer>
+
+</body>
+</html>
