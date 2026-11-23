@@ -164,12 +164,12 @@
           One of the most persistent challenges in climate modeling is the double-ITCZ bias—where models simulate excessive rainfall south of the equator and insufficient precipitation along the equator itself. This systematic distortion degrades global projections of tropical climate patterns, including monsoons and El Niño dynamics.
         </p>
         <p>
-          In our research
+          In my research
           <a href="https://acp.copernicus.org/articles/25/16915/2025/" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2025)</a>,
-          I leverage ICON XPP - a flexible configuration of the ICON model supporting tunable parameterizations—to examine how this bias scales from coarse, parameterization-dependent grids to convection-permitting resolutions.
+          Using ICON XPP - a flexible configuration of the ICON model supporting tunable parameterizations - to examine how this bias scales from coarse, parameterization-dependent grids to convection-permitting resolutions.
         </p>
         <p>
-          We demonstrate that the double-ITCZ bias persists even at kilometer-scale resolutions, pointing to fundamental deficiencies in moisture transport and surface–atmosphere interactions. Systematically tracing physical process dynamics across spatial resolutions reveals that resolving tropical rainfall requires more than finer grids or simply omitting parameterization schemes—it demands a refined physical representation of the mechanisms governing Earth's hydrological cycle.
+          I demonstrate that the double-ITCZ bias persists even at kilometer-scale resolutions, pointing to fundamental deficiencies in moisture transport and surface–atmosphere interactions. Systematically tracing physical process dynamics across spatial resolutions reveals that resolving tropical rainfall requires more than finer grids or simply omitting parameterization schemes - it demands a refined physical representation of the mechanisms governing Earth's hydrological cycle.
         </p>
 
         <figure class="figure-card">
@@ -190,7 +190,7 @@
         <figure class="project-media-left">
           <img src="waterVapour.png" alt="Relative humidity vs temperature profile" />
           <figcaption class="figure-caption">
-            <strong>Fig. 2:</strong> Saturation specific humidity at the equivalent frost-point temperature (<em>T</em><sub>frost</sub>, solid line) vs. mean specific humidity at the cold-point tropopause (dashed line). Additional frozen moisture is captured via a constant temperature offset to <em>T</em><sub>frost</sub>. <em>(Adapted from Kroll and Schmidt, 2025)</em>
+            <strong>Fig. 2:</strong> Saturation specific humidity at the equivalent frost-point temperature (<em>T</em><sub>frost</sub>, solid line) vs. mean specific humidity at the cold-point tropopause (dashed line). Additional frozen moisture is captured via a constant temperature offset to <em>T</em><sub>frost</sub>. <em>(Adapted from Kroll and Schmidt, 2024)</em>
           </figcaption>
         </figure>
 
@@ -202,13 +202,13 @@
           <p>
             To address this, I use a hybrid approach combining coarse-scale large-ensemble simulations of volcanic eruptions of varying magnitudes
             <a href="https://acp.copernicus.org/articles/21/6565/2021/acp-21-6565-2021.html" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2021)</a>
-            with high-resolution km-scale simulations focusing on a single eruption magnitude to study frozen moisture transport by overshooting convection
+            with high-resolution kilometer-scale simulations focusing on a single eruption magnitude to study frozen moisture transport by overshooting convection
             (<a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022GL102262" target="_blank" rel="noopener" class="paper-link">Kroll et al., 2023</a>;
             <a href="https://iopscience.iop.org/article/10.1088/1748-9326/ad33d0/meta" target="_blank" rel="noopener" class="paper-link">Kroll et al., 2024</a>).
           </p>
           <p>
-            By synthesizing these findings into a thermodynamically based framework, I enable rapid estimation of changes in stratospheric moisture. This work advances parameterizations of overshooting convection, helps assess the impact of future eruptions, and places recent events like the 2022 Hunga eruption into context
-            <a href="https://www.nature.com/articles/s43247-024-01651-w" target="_blank" rel="noopener" class="paper-link">(Kroll and Schmidt, 2025)</a>.
+            Synthesizing these findings into a thermodynamically based framework enables rapid estimation of changes in stratospheric moisture. This work advances parameterizations of overshooting convection, helps assess the impact of future eruptions, and places recent events like the 2022 Hunga eruption into context
+            <a href="https://www.nature.com/articles/s43247-024-01651-w" target="_blank" rel="noopener" class="paper-link">(Kroll and Schmidt, 2024)</a>.
           </p>
         </div>
       </article>
@@ -218,7 +218,7 @@
       <article class="project-feature-card research-card-full">
         <h2>Kilometer-Scale ICON Modeling</h2>
         <p>
-          I employ a resolution hierarchy of the ICON model—the German and Swiss weather and climate model—to study atmospheric processes across scales. Beyond running simulations, I focus on improving how the model represents key physical processes. Building on my storm-resolving work with ICON-Sapphire <a href="https://doi.org/10.5194/gmd-16-779-2023" target="_blank" rel="noopener" class="paper-link">(Hohenegger et al., incl. Kroll, 2023)</a>, I now contribute to the coarse-scale ICON XPP configuration for upcoming CMIP7 climate simulations <a href="https://gmd.copernicus.org/articles/18/9385/2025/" target="_blank" rel="noopener" class="paper-link">(Müller et al., incl. Kroll, 2025)</a>, and independently develop an uncoupled, storm-resolving setup of ICON XPP <a href="https://acp.copernicus.org/articles/25/16915/2025/" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2025)</a> on GPUs using OpenACC directives within the Blue Line EXCLAIM framework <a href="https://gmd.copernicus.org/articles/19/713/2026/" target="_blank" rel="noopener" class="paper-link">(Dipankar et al., incl. Kroll, 2026)</a>.
+        I employ a resolution hierarchy of the ICON model - the German and Swiss weather and climate model - to study atmospheric processes across scales and improve how key physical processes are represented. This work spans from global storm-resolving simulations with ICON-Sapphire <a href="https://doi.org/10.5194/gmd-16-779-2023" target="_blank" rel="noopener" class="paper-link">(Hohenegger et al., incl. Kroll, 2023)</a> to the coarse-scale ICON XPP configuration developed for upcoming CMIP7 climate projections <a href="https://gmd.copernicus.org/articles/18/9385/2025/" target="_blank" rel="noopener" class="paper-link">(Müller et al., incl. Kroll, 2025)</a>. More recently, I developed an uncoupled, storm-resolving ICON XPP setup <a href="https://acp.copernicus.org/articles/25/16915/2025/" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2025)</a> running on GPUs via OpenACC directives within the Blue Line EXCLAIM framework <a href="https://gmd.copernicus.org/articles/19/713/2026/" target="_blank" rel="noopener" class="paper-link">(Dipankar et al., incl. Kroll, 2026)</a>.
         </p>
 
         <!-- Side-by-Side Row: Latest Work Text + Figure -->
@@ -233,7 +233,7 @@
         <div class="split-text">
           <p>
             <br><br><br>
-            My latest work <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005583" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2026)</a> analyzes how transitioning to explicit kilometer-scale physics alters spatial wave spectra and velocity variance across scales from 10&nbsp;km to 10,000&nbsp;km. To prevent numerical artifacts from corrupting physical signals, I reformulate ICON’s upper-boundary absorber into a scale-dependent damping scheme, resolving a critical numerical bottleneck in high-resolution climate modeling.
+            <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005583" target="_blank" rel="noopener" class="paper-link">Kroll et al., 2026</a> analyzes how transitioning to explicit kilometer-scale physics alters spatial wave spectra and velocity variance across scales from 10&nbsp;km to 10,000&nbsp;km. To prevent numerical artifacts from corrupting physical signals, I reformulate ICON’s upper-boundary absorber into a scale-dependent damping scheme, preventing spurious wave reflections at the model top in kilometer-scale simulations.
           </p>
         </div>
       </div>
@@ -241,7 +241,7 @@
 
       
         <p>
-          My research leverages major European HPC platforms—including Levante, Mistral, Daint, and Alps—to run large-scale experiments efficiently, highlighted in the BBC feature below on our simulations conducted on the Alps supercomputer.
+          This research leverages major European HPC platforms - including Levante, Mistral, Daint, and Alps - to run large-scale experiments efficiently, highlighted in the BBC feature below on our simulations conducted on the Alps supercomputer.
         </p>
 
         <div class="subsection-media">
