@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    /* Consistent full-width and media-left layouts using .project-feature-card box styling */
+    /* Consistent full-width and media-left layouts .project-feature-card box styling */
     .research-topics {
       display: flex;
       flex-direction: column;
@@ -166,10 +166,10 @@
         <p>
           In my research
           <a href="https://acp.copernicus.org/articles/25/16915/2025/" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2025)</a>,
-          Using ICON XPP - a flexible configuration of the ICON model supporting tunable parameterizations - to examine how this bias scales from coarse, parameterization-dependent grids to convection-permitting resolutions.
+          I use ICON XPP—a flexible configuration of the ICON model supporting tunable parameterizations—to examine how this bias scales from coarse, parameterization-dependent grids to convection-permitting resolutions.
         </p>
         <p>
-          I demonstrate that the double-ITCZ bias persists even at kilometer-scale resolutions, pointing to fundamental deficiencies in moisture transport and surface–atmosphere interactions. Systematically tracing physical process dynamics across spatial resolutions reveals that resolving tropical rainfall requires more than finer grids or simply omitting parameterization schemes - it demands a refined physical representation of the mechanisms governing Earth's hydrological cycle.
+          I demonstrate that the double-ITCZ bias persists even at kilometer-scale resolutions, pointing to fundamental deficiencies in moisture transport and surface–atmosphere interactions. Systematically tracing physical process dynamics across spatial resolutions reveals that resolving tropical rainfall requires more than finer grids or simply omitting parameterization schemes—it demands a refined physical representation of the mechanisms governing Earth's hydrological cycle.
         </p>
 
         <figure class="figure-card">
@@ -214,34 +214,35 @@
       </article>
 
       <!-- Card 3: Full-Width Box -->
-<!-- Card 3: Full-Width Box with Embedded Split Image -->
+      <!-- Card 3: Full-Width Box with Embedded Split Image -->
       <article class="project-feature-card research-card-full">
         <h2>Kilometer-Scale ICON Modeling</h2>
         <p>
-        I employ a resolution hierarchy of the ICON model - the German and Swiss weather and climate model - to study atmospheric processes across scales and improve how key physical processes are represented. This work spans from global storm-resolving simulations with ICON-Sapphire <a href="https://doi.org/10.5194/gmd-16-779-2023" target="_blank" rel="noopener" class="paper-link">(Hohenegger et al., incl. Kroll, 2023)</a> to the coarse-scale ICON XPP configuration developed for upcoming CMIP7 climate projections <a href="https://gmd.copernicus.org/articles/18/9385/2025/" target="_blank" rel="noopener" class="paper-link">(Müller et al., incl. Kroll, 2025)</a>. More recently, I developed an uncoupled, storm-resolving ICON XPP setup <a href="https://acp.copernicus.org/articles/25/16915/2025/" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2025)</a> running on GPUs via OpenACC directives within the Blue Line EXCLAIM framework <a href="https://gmd.copernicus.org/articles/19/713/2026/" target="_blank" rel="noopener" class="paper-link">(Dipankar et al., incl. Kroll, 2026)</a>.
+          Global kilometer-scale modeling represents a new frontier in climate science, allowing convective storms and gravity waves to be resolved explicitly rather than parameterized. I work across a resolution hierarchy of the ICON model—the German and Swiss weather and climate model—to study atmospheric dynamics across scales and improve physical representations. This spans from global storm-resolving simulations with ICON-Sapphire <a href="https://doi.org/10.5194/gmd-16-779-2023" target="_blank" rel="noopener" class="paper-link">(Hohenegger et al., incl. Kroll, 2023)</a> to the coarse-scale ICON XPP configuration developed for upcoming CMIP7 climate projections <a href="https://gmd.copernicus.org/articles/18/9385/2025/" target="_blank" rel="noopener" class="paper-link">(Müller et al., incl. Kroll, 2025)</a>. More recently, I developed an uncoupled, storm-resolving ICON XPP setup <a href="https://acp.copernicus.org/articles/25/16915/2025/" target="_blank" rel="noopener" class="paper-link">(Kroll et al., 2025)</a> running on GPUs via OpenACC directives within the Blue Line EXCLAIM framework <a href="https://gmd.copernicus.org/articles/19/713/2026/" target="_blank" rel="noopener" class="paper-link">(Dipankar et al., incl. Kroll, 2026)</a>.
         </p>
 
         <!-- Side-by-Side Row: Latest Work Text + Figure -->
         <div class="card-split-row">
 
-         <figure class="figure-card">
-          <img src="damping.jpeg" alt="Spatial wave spectra and scale-dependent damping in ICON" />
-          <figcaption class="figure-caption">
-            <strong>Fig. 3:</strong> Vertical velocity fields exhibiting unphysical backreflections from the model top and velocity fields with different damping amplitudes.
-        </figure> 
+          <figure class="figure-card">
+            <img src="damping.jpeg" alt="Spatial wave spectra and scale-dependent damping in ICON" />
+            <figcaption class="figure-caption">
+              <strong>Fig. 3:</strong> Vertical velocity fields exhibiting unphysical back-reflections from the model top alongside simulations with different damping amplitudes.
+            </figcaption>
+          </figure> 
 
-        <div class="split-text">
-          <p>
-            <br><br><br>
-            <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005583" target="_blank" rel="noopener" class="paper-link">Kroll et al., 2026</a> analyzes how transitioning to explicit kilometer-scale physics alters spatial wave spectra and velocity variance across scales from 10&nbsp;km to 10,000&nbsp;km. To prevent numerical artifacts from corrupting physical signals, I reformulate ICON’s upper-boundary absorber into a scale-dependent damping scheme, preventing spurious wave reflections at the model top in kilometer-scale simulations.
-          </p>
+          <div class="split-text">
+            <p style="margin-top: 2.5rem;">
+              Pushing global models into previously unexplored global kilometer-scale resolutions exposes new numerical bottlenecks—they require modifying the model code itself. In <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005583" target="_blank" rel="noopener" class="paper-link">Kroll et al. (2026)</a>, I analyze how explicitly resolved kilometer-scale physics alters spatial wave spectra and velocity variance across scales from 10&nbsp;km to 10,000&nbsp;km. To stop numerical artifacts from corrupting physical signals, I modified ICON’s codebase to reformulate its upper-boundary absorber into a scale-dependent damping scheme, eliminating spurious wave reflections at the model top.
+            </p>
+          </div>
         </div>
-      </div>
+      </article>
 
 
       
         <p>
-          This research leverages major European HPC platforms - including Levante, Mistral, Daint, and Alps - to run large-scale experiments efficiently, highlighted in the BBC feature below on our simulations conducted on the Alps supercomputer.
+          This research leverages major European HPC platforms—including Levante (DKRZ, D), Mistral (DKRZ, D), Daint (Lugano, CH), and Alps (Lugano, CH)—to run large-scale experiments efficiently, highlighted in the BBC feature below on our simulations conducted on the Alps supercomputer.
         </p>
 
         <div class="subsection-media">
